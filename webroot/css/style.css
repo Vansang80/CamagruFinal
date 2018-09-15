@@ -1,0 +1,737 @@
+/* --------------- CORPS -------------- */
+body
+{
+    padding: 5px;
+    margin: 0px;
+}
+
+#yu
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* ---------------- HEADER ------------- */
+
+header #logo_title
+{
+    display: table;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+header div #img_logo
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+header div h1
+{
+    color: rgb(251, 140, 0);
+    font-size: 50px;
+    position: relative;
+    top: -25px;
+    z-index: 2;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* ------------------ NAV ----------------- */
+
+nav
+{
+    margin-bottom: 80px;
+}
+nav ul
+{
+    display : flex;
+    justify-content: center; 
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul #radius-start
+{
+    border-radius: 10px 0px 0px 10px;
+    border-right: 2px solid #dbdbdb;
+}
+
+nav ul #border_middle, #border_inscription
+{
+    border-right: 2px solid #dbdbdb;
+}
+
+nav ul #radius-end
+{
+    border-radius: 0px 10px 10px 0px;
+    border-left: 2px solid #dbdbdb;
+}
+
+nav ul #camera_play
+{
+    border-left: 2px solid #dbdbdb;
+}
+nav ul li
+{
+    
+    list-style-type: none;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    padding : 10px 30px;
+    background-color : #f2f2f2;
+    box-shadow: 6px 6px 6px black
+}
+nav ul li:hover
+{
+     background: linear-gradient(45deg, #757f9a, #d7dde8);
+}
+nav ul a
+{
+    text-decoration : none;
+    color: black;
+}
+
+/* ------------------- SECTION ------------------*/
+
+/* HOME */
+section
+{
+    margin-bottom: 80px;;
+}
+section #main_section
+{
+    height: 700px;
+    background-image: url("../img/rick_and_morty1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #main_section p
+{
+    font-size: 120px;
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    color: #E55D87;
+    text-shadow: 
+    #00ffb6 1px 1px 1px, 
+    #00ffb6 -1px 1px 1px, 
+    #00ffb6 -1px -1px 1px, 
+    #00ffb6 1px -1px 1px; 
+}
+
+section #main_section #logo_troll
+{
+    width: 200px;
+    height: 200px;
+}
+
+/* --------------- OPTION -------------------*/
+#option
+{
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color : #f2f2f2;
+    cursor: pointer;
+}
+
+#option:hover
+{
+     background: linear-gradient(45deg, #757f9a, #d7dde8);
+}
+
+#style
+{
+    text-decoration-line: none;
+    color: black;
+}
+
+#style: visited
+{
+    color: black;
+}
+
+
+/* --------------- GALLERY-------------------*/
+
+.box_gallery
+{
+    width: 90%;
+    margin: auto;
+    padding: 90px 10px;
+    border: 20px solid #78ffd6;
+    border-radius: 20px;
+    box-shadow: 15px 10px 5px 0px #11998e; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fa-comments
+{
+    display: block;
+    font-size: 20px;
+}
+
+.galery_picture
+{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.galery_picture
+{
+    transition: all 1s ease;
+}
+
+#zoom_picture:hover .galery_picture
+{
+    transform:scale(1.15);
+}
+
+.box_gallery_img1
+{
+    background: url(../img/gallery/rick_morty_1.jpg);
+}
+
+.box_gallery_img2
+{
+    background: url(../img/gallery/rick_morty_2.png);
+}
+
+.box_gallery_img3
+{
+    background: url(../img/gallery/rick_morty_3.jpg);
+}
+
+.box_gallery_img4
+{
+    background: url(../img/gallery/rick_morty_4.png);
+}
+
+.box_gallery_img5
+{
+    background: url(../img/gallery/rick_morty_5.jpg);
+}
+
+.box_gallery_img1, .box_gallery_img2, .box_gallery_img3, .box_gallery_img4, .box_gallery_img5
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    background-size: cover; 
+    background-position: center center;
+}
+
+
+/* ------------------ PAGINATION ----------*/
+
+#pagination
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+#sous_pagination, #sous_pagination_current
+{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black; text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#sous_pagination:hover
+{
+     background-color: #FDC830;
+}
+
+#sous_pagination
+{
+    background-color: rgb(251, 140, 0);
+}
+
+#sous_pagination_current
+{
+    background-color: #FDC830;
+}
+
+a:visited
+{
+    color: black
+}
+
+/* ------------------ MINIATURE ----------------*/
+
+#file, select
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* ------------------ COMMENTAIRES/LIKES ----------------*/
+
+#text_commentaires
+{
+    display: block;
+    margin: auto;
+    background: linear-gradient(#ECE9E6, #FFFFFF);
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#picture_commentaire
+{
+    display: flex;
+    justify-content: center;
+}
+
+#pic_com
+{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#com_like
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#mini_picture
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* ------------------ FORM ----------------*/
+
+section #form
+{
+    height: 700px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Lobster Two', cursive;
+}
+
+section .header_form
+{
+    margin: 0px;
+    padding: 20px 80px;
+    background-color: #444; 
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+section .footer_form
+{
+    background-color: #444; 
+    color: #FFF;
+    padding: 20px 80px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+label
+{
+    font-size: 25px; 
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+section input[type="text"], input[type="email"], input[type="password"]
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 270px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(#ECE9E6, #FFFFFF);
+
+}
+
+section input[type="submit"]
+{
+    border: 0px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 0px #D4D3DD;
+    font-size: 20px;
+    font-family: 'Lobster Two', cursive;
+    margin: auto;
+    display: block;
+}
+
+input[type="file"], select
+{
+    display: block;
+    margin: auto;
+}
+
+/* ------------------ FOOTER ----------------*/
+
+footer #main_footer
+{    
+    margin-top: 60px;
+    background: linear-gradient(45deg, #232526, #414345);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+footer #main_footer #footer_left
+{
+    margin-right: 400px;
+    font-size: 20px;
+}
+
+footer #main_footer #footer_left .fa-map-marker
+{
+    margin-top : 30px;
+}
+
+footer #main_footer #footer_left .fas
+{
+    margin-bottom: 20px;
+}
+
+/*-------------- CAMERA --------------------*/
+canvas {
+    display: none;
+}
+
+#startbutton
+{
+    display: none;
+}
+
+#photo
+{
+    width: 100%;
+}
+#camera
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #f2f2f2;
+    box-shadow: 6px 6px 6px black;
+}
+
+#camera_middle
+{
+    border: 1px solid black;
+}
+
+.camera_left_sous, .camera_right_sous
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.camera_left_sous1
+{
+    background-image: url(../img/camera_filter/1.png);
+}
+
+.camera_left_sous2
+{
+    background-image: url(../img/camera_filter/2.png);
+}
+
+.camera_left_sous3
+{
+    background-image: url(../img/camera_filter/3.png);
+}
+
+.camera_left_sous4
+{
+    background-image: url(../img/camera_filter/4.png);
+}
+
+.camera_left_sous5
+{
+    background-image: url(../img/camera_filter/5.png);
+}
+
+.camera_right_sous6
+{
+    background-image: url(../img/camera_filter/6.png);
+}
+
+.camera_right_sous7
+{
+    background-image: url(../img/camera_filter/7.png);
+}
+
+.camera_right_sous8
+{
+    background-image: url(../img/camera_filter/8.png);
+}
+
+.camera_right_sous9
+{
+    background-image: url(../img/camera_filter/9.png);
+}
+
+.camera_right_sous10
+{
+    background-image: url(../img/camera_filter/a.png);
+}
+
+.camera_left_sous1, .camera_left_sous2, .camera_left_sous3, .camera_left_sous4, .camera_left_sous5, .camera_right_sous6, .camera_right_sous7, .camera_right_sous8, .camera_right_sous9, .camera_right_sous10
+{
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#camera_middle
+{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video
+{
+    height: 700px;
+    width: 700px;
+}
+
+#filter_img
+{
+    width: 250px;
+    height: 250px;
+    
+    position: absolute;
+    z-index: 30;
+    top: 10px;
+    left: 15px;
+    background-size: cover;
+    background-position: center center;
+    display: none;
+    top: 80px;
+    z-index: 20;
+}
+
+/*-------------- RESPONSIVE ----------------*/
+
+@media screen and (max-width: 800px)
+{
+    /* NAV */
+    nav ul
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul #radius-start
+    {
+        border-radius: 10px 10px 0px 0px;
+        border: 2px solid #dbdbdb;
+    }
+    nav ul #border_middle, #border_inscription, #my_profil
+    {
+        border-left: 2px solid #dbdbdb;
+        border-right: 2px solid #dbdbdb;   
+        border-bottom: 2px solid #dbdbdb; 
+    }
+
+    nav ul #border_inscription, #my_profil
+    {
+        border-left: 2px solid #dbdbdb;
+    }
+
+    nav ul #radius-end
+    {
+        border-radius: 0px 0px 10px 10px;
+        border: 2px solid #dbdbdb;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px)
+{
+    /* SECTION */
+    section #main_section
+    {
+        flex-direction: column;
+    }
+    section #main_section p
+    {
+        font-size: 90px;
+    }
+    section #main_section #logo_troll
+    {
+        position: relative;
+        top : -60px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    /* FOOTER */
+    footer #main_footer
+    {
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1500px)
+{
+    /* FOOTER */
+    footer #main_footer #footer_left
+    {    
+       margin-right: 0px; 
+    }
+    footer #main_footer
+    {
+        justify-content: space-between;
+    }
+
+    .box_gallery
+    {
+        padding: 90px 10px;
+    }
+}
+
+@media screen and (max-width: 1022px)
+{
+    /* CAMERA */
+
+    #camera
+    {
+        flex-direction: column;
+    }
+
+    #camera_left, #camera_right
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #camera_left
+    {
+        margin-bottom: 20px;
+    }
+
+    #camera_right
+    {
+        margin-top: 20px;
+    }
+
+    .camera_left_sous, .camera_right_sous
+    {
+        width: 100px;
+        height: 100px;
+    }
+    #camera_middle
+    {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    /* CAMERA */
+
+    #camera_middle, #video
+    {
+        width: 500px;
+        height: 500px;
+    }
+    #filter_img
+    {
+        width: 150px;
+        height: 150px;
+    }
+    #bon
+    {
+        margin-bottom: 50px;
+    }
+
+    .camera_left_sous, .camera_right_sous
+    {
+        margin-bottom: 10px;
+    }
+
+    #camera_middle
+    {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    /* GALLERY */
+    .box_gallery
+    {
+        padding: 60px 3px;
+    }
+     #camera_middle, #video
+    {
+        width: 350px;
+        height: 350px;
+    }
+    #filter_img
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
